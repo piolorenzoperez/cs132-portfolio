@@ -105,23 +105,22 @@
 					<footer>
 						<p><font size = "30">What was the data used for the project?</font></p>
 						<p>
-							The dataset was acquired from <a href = "https://nhfr.doh.gov.ph/VActivefacilitiesList ">National Health Facility Registry</a>, 
-							an initiative to create an online map
-							of every health facility in the world in the hopes of making details of these locations
-							easily accessible. The dataset contains information on healthcare facilities
-							across the Philippines. It includes geographic, operational, and service-related
-							details of various medical establishments such as hospitals, clinics, pharmacies,
-							and specialty centers. The dataset provides insights into the distribution,
-							accessibility, and attributes of healthcare services in different regions.
+							Our team used 2 datasets one was acquired from <a href = "https://nhfr.doh.gov.ph/VActivefacilitiesList ">National Health Facility Registry</a> 
+							and the other was aquired from <a href = "https://psa.gov.ph/content/highlights-population-density-philippines-2020-census-population-and-housing-2020-cph">PSA Population Density</a>. 
+							The first dataset contains information about the healthcare facilities in the Philippines, including their locations, types, and services. 
+							It includes geographic, operational, and service-related details of various medical establishments such as hospitals, clinics, pharmacies, and specialty centers.
+							The second dataset contains the population density of the Philippines in the different cities and municipalities in the Philippines.
+							Combined these datasets provides insights into the distribution of healthcare facilities and their accessibility to the population.
+
+
 						</p>
 						<p>
-							Google Sheets was used to preprocess the data. First, it was decided that
-							the main features to be measured are the following: longitude and latitude
-							coordinates, type of healthcare facility, type of specialty (if existing),
-							type of operator, and availability of emergency services. The data was then
-							filtered to exclude samples that did not have values of operator type and
-							availability of emergency services. Afterwards, missing values for coordinates
-							were manually inputted via cross referencing with OpenStreetMap.
+							Google Sheets was used to preprocess the data. First, we removed the unnecessary columns and rows from the dataset like landline numbers, fax numbers and 
+							other information that was not relevant for our analysis. Our team also had to manully match cities in both dataset so we can properly merge them together.
+							There were also inconsistencies when trying to match the 2 datasets, as regional conflicts occurred during the time in between the recording of the datasets, resulting in some mismatches in geographical features
+							These were handled by updating the PSA dataset to match the Negros Islands Region in the NHFR, and changing the regions of the Special Geographical Area in the NHFR dataset to match the PSA dataset.
+							Highly Urbanized Cities were updated to be part of the provinces they are geographically in, instead of being a separate province altogether (as listed in datasets).
+							
 						</p>
 						<p>
 							<font size = "2">
